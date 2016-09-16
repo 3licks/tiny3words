@@ -1,17 +1,22 @@
 {
     "author": "felix@codeantics.co.uk",
-    "dependencies": {},
+    "dependencies": {
+        "pebble-clay": "^1.0.0"
+    },
     "keywords": [],
     "name": "tiny3words",
     "pebble": {
         "capabilities": [
-            "location"
+            "location",
+            "configurable"
         ],
         "displayName": "tiny3words",
         "enableMultiJS": true,
         "messageKeys": [
             "refresh",
-            "words"
+            "words",
+            "enableRefresh",
+            "interval"
         ],
         "projectType": "native",
         "resources": {
@@ -24,10 +29,10 @@
             "chalk",
             "diorite"
         ],
-        "uuid": "66992bb4-ffe0-40d1-89d7-8c142f500081",
+        "uuid": "25af2eaa-1c04-4972-a5cb-d39ba43f8fb1",
         "watchapp": {
             "watchface": false
         }
     },
-    "version": "1.7.0"
+    "version": "1.9.0"
 }

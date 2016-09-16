@@ -15,7 +15,7 @@ static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
     dict_write_int(out_iter, MESSAGE_KEY_refresh, &value, sizeof(int), true);
     result = app_message_outbox_send();
   }
-
+  
 }
 
 static void click_config_provider(void *context) {
