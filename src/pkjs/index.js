@@ -19,12 +19,9 @@ function locationSuccess(pos) {
   request.onload = function() {
     var data = JSON.parse(this.responseText);
     var words = data.words;
-    var word = {'words': words};
-    Pebble.sendAppMessage(word, function() {
-      console.log('Message sent successfully: ' + JSON.stringify(word));
-    }, function(e) {
-      console.log('Message failed: ' + JSON.stringify(e));
-});
+    words = words.split(".");
+    words = words[0]+". "+words[1]+". "+words[2];
+    Pebble.sendAppMessage({'words': words});
   };
   
   // Send the request
