@@ -1,0 +1,33 @@
+{
+    "author": "felix@codeantics.co.uk",
+    "dependencies": {},
+    "keywords": [],
+    "name": "tiny3words",
+    "pebble": {
+        "capabilities": [
+            "location"
+        ],
+        "displayName": "tiny3words",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "refresh",
+            "words"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite"
+        ],
+        "uuid": "66992bb4-ffe0-40d1-89d7-8c142f500081",
+        "watchapp": {
+            "watchface": false
+        }
+    },
+    "version": "1.0.0"
+}
