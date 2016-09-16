@@ -1,5 +1,3 @@
-var apiKey = "";
-
 var lat;
 var long;
 
@@ -12,7 +10,7 @@ var locationOptions = {
 function locationSuccess(pos) {
   lat = pos.coords.latitude;
   long = pos.coords.longitude;
-  var w3wUrl = "https://api.what3words.com/v2/reverse?coords="+lat+"%2C"+long+"&key="+apiKey+"&display=minimal";
+  var w3wUrl = "http://felixhasa.website/w3w.php?lat="+lat+"&lon="+long;
   
   var method = 'GET';
   // Create the request
